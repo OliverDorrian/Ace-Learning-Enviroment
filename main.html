@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ace Academy</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="Assets/favicon.svg">
+    </head>
+    <body>
+        <div class="progress">
+        </div>
+        <div id="topBar">
+            <div id="topBarLeft">
+                <div id="topBarTitle">
+                    <h1>Ace <b>Academy</b></h1>
+                </div>
+            </div>
+            <div id="topBarRight">
+                <div id="topBarLinks">
+                    <h3 class="topBarLinksText activeLink">Web Dev</h3>
+                    <h3 class="topBarLinksText">OOSD</h3>
+                    <h3 class="topBarLinksText">Spring-Boot</h3>
+                    <h3 class="topBarLinksText">Networking</h3>
+                </div>
+            </div>
+        </div>
+        <div id="quickLinks">
+            <h3 id="felxClick">Flex Design</h3>
+            <h3 id="centerDivClick">Centering Divs</h3>
+            <h3>DOM Objects</h3>
+        </div>
+
+        <div class="article" id="flexArticle">
+            <div class="articleInformation">
+                <h3>10/03/2022</h3>
+                <h3>Week 1</h3>
+            </div>
+            <div class="articleTitle">
+                <h1 class="articleTitleMain">Web Dev: Flex Design</h1>
+                <h3 class="articleTitleSmall">The Flexbox Layout aims at providing a more efficient way to lay out, align and distribute space among items in a container.</h3>
+            </div>
+            <div class="articleImg">
+                <img src="Assets/webDeve.jpg">
+            </div>
+            <div id="textArea">
+                <h1 class="BiggestText">
+                    Flex Box introduction
+                </h1>
+                <p class="SmallText">
+                    Flexbox is an excellent method to handle page layouts in CSS. 
+                    It can manipulate the height and width of an item to occupy all the space within the 
+                    parent container ("flex-container") and control the vertical and horizontal flow of each
+                    child ("flex-items").
+                </p>
+                <p class="SmallText">
+                    A design pattern that can be tricky in responsive design is a sidebar that sits inline with some content. 
+                    Where there is viewport space, this pattern works great, 
+                    but where space is condensed, that rigid layout can become problematic.
+                </p>
+                <h1 class="BiggestText">
+                    Terminology Of Flex Boxes
+                </h1>
+                <p class="SmallText">
+                    Flex-container and flex-item are the basic components in the flexbox layout. 
+                    You can consider flex-container as a parent element on a page that contains children known as flex-items. 
+                    The main idea behind the flex layout is that all the flex-items inside the 
+                    flex-container are either laid out along the main axis or the cross axis as shown below:
+                </p>
+                <img src="Assets/flexPic.webp" class="textAreaImg">
+                <h1 class="BiggestText">
+                    Key Facts 
+                </h1>
+                <p class="SmallText">
+                    When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. 
+                    The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. 
+                    Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.
+                </p>
+                <div class="articleInformation">
+                    <h3>10/03/2022</h3>
+                    <h3>Week 1</h3>
+                </div>
+            </div>
+        </div>
+        <div class="article" id="CenteringDivs">
+            <div class="articleInformation">
+                <h3>12/03/2022</h3>
+                <h3>Week 1</h3>
+            </div>
+            <div class="articleTitle">
+                <h1 class="articleTitleMain">Web Dev: Centering A Div</h1>
+                <h3 class="articleTitleSmall">The Flexbox Layout aims at providing a more efficient way to lay out, align and distribute space among items in a container.</h3>
+            </div>
+            <div class="articleImg">
+                <img src="Assets/center.jpg">
+            </div>
+            <div id="textArea">
+                <h1 class="BiggestText">
+                    Centering introduction
+                </h1>
+                <p class="SmallText">
+                    Whether you’re building a site from scratch or with the Bootstrap CSS framework, 
+                    you’ll need to have a basic understanding of HTML and CSS to create and customize 
+                    your layouts.
+                </p>
+                <p class="SmallText">
+                    A major challenge of building layouts is arranging and styling elements on the page. 
+                    Do you want the elements to overlap or have space between them? 
+                    Do you want the layout to be responsive? Do you want some text on the page to be 
+                    centered and the rest left-aligned? These are just a few questions you’ll have to 
+                    address as you code.
+                </p>
+                <h1 class="BiggestText">
+                    How to Center Text in Div in CSS
+                </h1>
+                <p class="SmallText">
+                    Using CSS, you can center text in a div in multiple ways. The most common way is to 
+                    use the text-align property to center text horizontally. 
+                    Another way is to use the line-height and vertical-align properties.
+                     The last way exclusively applies to flex items and requires the justify-content 
+                     and align-items properties. Using this method, you can center text horizontally, 
+                     vertically, or both. We'll take a closer look at each method below. 
+                </p>
+                <div class="codeBox">
+                    <code>
+                        <h3>position: absolute; </h3>
+                        <h3>bottom: 0;</h3>
+                        <h3>left: 46%;</h3>
+                    </code>
+                </div>
+                <img scr="https://github.com/OliverDorrian/A-interactive-CV/blob/35e08d308f3d847304847cfd0c8f3d7d22c31f87/index.css#L94-L95">
+                <h1 class="BiggestText">
+                    Key Facts 
+                </h1>
+                <p class="SmallText">
+                    When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. 
+                    The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. 
+                    Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.
+                </p>
+                <div class="articleInformation">
+                    <h3>12/03/2022</h3>
+                    <h3>Week 1</h3>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body> 
+</html> 

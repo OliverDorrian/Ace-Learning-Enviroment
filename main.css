@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+:root{
+    --blackOfBlack: #000E3B;
+    --blackGrey: #ADADAD;
+    --greyGrey: #DBDBDB;
+    --almostWhite: #D4D2D2;
+
+    --darkRed: #E21C21;
+    --rubyRed: #FF4040;
+    --skinRed: #FA6B75;
+    --peach: #FFA1A5; 
+
+    --enoBlue: #001E80;
+    --blue: #0332CB;
+    --lighterBlue: #83A8F0;
+    --lightestBlue: #CFDEFC;
+
+    --bananaYellow: #FADD52;
+    --weakYellow: #FFEEA6;
+
+    --niceGreen: #9BCB6C;
+
+    --raisin-black: #252323ff;
+    --slate-gray: #70798cff;
+    --isabelline: #f5f1edff;
+    --bone: #dad2bcff;
+    --grullo: #a99985ff;
+
+    --rich-black-fogra-29: #001219ff;
+    --aliWhite: #f2f2f2;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 20px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: orange;
+    /*width: calc(var(--scroll) * 50%);*/
+    width: var(--scroll-per);
+    z-index: 10;
+}
+
+div, h1, h2, h3, h4, h5, h6, p, span, img, hr{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--enoBlue);
+    margin: 0;
+    padding: 0;
+}
+
+#topBar{
+    top: 0;
+    color: var(--skinRed);
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+}
+
+#topBarLeft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#topBarTitle{
+    text-align: center;
+}
+
+#topBarTitle h1{
+    font-size: 2rem;
+}
+
+#topBarRight{
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+#topBarLinks{
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topBarLinksText{
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+.topBarLinksText:hover{
+    color: var(--aliWhite);
+    cursor: pointer;
+}
+
+.activeLink{
+    color: var(--skinRed);
+}
+
+#quickLinks{
+    margin-top: 2%;
+    font-size: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 60%;
+    margin-left: 20%;
+    color: white;
+}
+
+#quickLinks h3{
+    margin-left: 30px;
+}
+
+#quickLinks h3:hover{
+    color: var(--skinRed);
+    cursor: pointer;
+}
+
+.article{
+    padding-top: 2%;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 2%;
+    background-color: white;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-bottom: 20px;
+}
+
+.articleInformation{
+    padding-top: 1%;
+    color: rgb(133, 131, 131);
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.articleInformation:nth-last-child(){
+    margin-left: auto;
+}
+
+.articleTitle {
+    font-weight: bold;
+}
+
+.articleTitleMain{
+    padding: 20px 0px 20px 0px;
+}
+
+.articleTitleSmall{
+    padding: 0px 0px 20px 0px;
+}
+
+.articleImg{
+    height: 70vh;
+    width: 100%;
+}
+
+.articleImg img{
+    height: 100%;
+    width: 100%;
+}
+
+.BiggestText{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px 0px 20px 0px;
+}
+
+.SmallText{
+    font-size: 1.25rem;
+    padding: 5px 0px 5px 0px;
+}
+
+.textAreaImg{
+    height: 40vh;
+    width: 100%;
+}
+
+.codeBox {
+    margin-top: 40px 0px 0px 0px;
+    background-color: var(--aliWhite);
+    width: 100%;
+    border-radius: 30px;
+}
+
+.codeBox code{
+    
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
