@@ -30,6 +30,11 @@
     --aliWhite: #f2f2f2;
 }
 
+@font-face {
+    font-family: fileFont;
+    src: url(Assets/AvenirLight.ttf);
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 2vh;
@@ -45,20 +50,6 @@
     border-radius: 10px;
 }
 
-.progress {
-    height: 20px;
-    display: flex;
-    white-space: nowrap;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: orange;
-    /*width: calc(var(--scroll) * 50%);*/
-    width: var(--scroll-per);
-    z-index: 10;
-}
 
 div, h1, h2, h3, h4, h5, h6, p, span, img, hr{
     margin: 0;
@@ -233,8 +224,116 @@ body {
 }
 
 .codeBox code{
-    
+    font-weight: normal;
     padding-left: 10%;
     display: flex;
     flex-direction: column;
+}
+
+.downLoadsTitle{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px 0px 0px 0px;
+}
+
+.downLoadArea{
+    font-weight: 100;
+    font-family: fileFont;
+    width: 98%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.downLoadAreaTitle{
+    height: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 50vw;
+}
+
+.downLoadAreaTitle div,p{
+    display: inline-block;
+}
+
+.name{
+    width: 50%;
+}
+
+.uploaded{
+    width: 16%
+}
+
+.size{
+
+    width: 16%;
+}
+
+.author{
+    width: 15%
+}
+
+.downLoadRow{
+    width: 100%;
+    cursor: pointer;
+}
+
+.row{
+    height: 7vh;
+    width: 50vw;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.title{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-end;
+ }
+
+ .meta{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: space-between;
+ }
+
+.rowDateUpload, .rowFileSize, .rowAuthor{
+    display: inline-block;
+}
+
+.fileImg{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 5vh;
+    width: 5vh;
+}
+
+.fileName{
+    margin-left: 3vh;
+    display: inline;
+}
+
+.rowDateUpload {
+    display: inline;
+    width: 33%;
+}
+
+.rowFileSize{
+    display: inline;
+    height: 100%;
+    width: 33%;
+}
+
+.rowAuthor{
+    display: inline;
+    height: 100%;
+    width: 33%;
 }

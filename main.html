@@ -132,10 +132,72 @@
                     Key Facts 
                 </h1>
                 <p class="SmallText">
-                    When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. 
-                    The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. 
-                    Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.
+                    The text-align: center; only centers the element's inline contents, not the element itself. 
+                    If it is a block element (a div is), you need to set margin: 0 auto; , 
+                    else if it is an inline element, you need to set the text-align: center; 
+                    on its parent element instead.
                 </p>
+                <h1 class="downLoadsTitle">
+                    Downloads
+                </h1>
+                <div class="downLoadArea">
+                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                    <div class="downLoadAreaTitle">
+                        <div class="name">
+                            <p>Name</p>
+                        </div>
+                        <div class="uploaded">
+                            <p>Uploaded</p>                        
+                        </div>        
+                        <div class="size">
+                            <p>Size</p>
+                        </div>        
+                        <div class="author">
+                            <p>Author</p>
+                        </div>
+                    </div>
+                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                    <div class="downLoadRow">
+                        <div class="row"> 
+                            <div class="title">
+                                <img class="fileImg" src="Assets/file.png">
+                                <p class="fileName">CenteringDivsTest.pdf</p>
+                            </div>
+                            <div class="meta">
+                                <div class="rowDateUpload">
+                                    <p>11/04/2022</p>
+                                </div>
+                                <div class="rowFileSize">
+                                    <p>43.3 MB</p>
+                                </div>
+                                <div class="rowAuthor">
+                                    <p>Oliver Dorrian</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                    <div class="downLoadRow">
+                        <div class="row"> 
+                            <div class="title">
+                                <img class="fileImg" src="Assets/file.png">
+                                <p class="fileName">SampleCode.pdf</p>
+                            </div>
+                            <div class="meta">
+                                <div class="rowDateUpload">
+                                    <p>10/04/2022</p>
+                                </div>
+                                <div class="rowFileSize">
+                                    <p>39.7 MB</p>
+                                </div>
+                                <div class="rowAuthor">
+                                    <p>Oliver Dorrian</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="width: 100%; border-radius: 10px;", size="1", color=grey>
+                </div>
                 <div class="articleInformation">
                     <h3>12/03/2022</h3>
                     <h3>Week 1</h3>
