@@ -46,7 +46,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: var(--skinRed);
     border-radius: 10px;
 }
 
@@ -63,7 +63,7 @@ html{
 }
 
 body {
-    background-color: var(--enoBlue);
+    background-color: #e0e2e4;
     margin: 0;
     padding: 0;
 }
@@ -78,25 +78,10 @@ body {
     width: 100%;
 }
 
-#topBarLeft{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#topBarTitle{
-    text-align: center;
-}
-
-#topBarTitle h1{
-    font-size: 2rem;
-}
 
 #topBarRight{
     width: 60%;
-    margin-left: 20%;
+    margin-left: 55%;
     display: flex;
     flex-direction: row;
 }
@@ -126,6 +111,135 @@ body {
     color: var(--skinRed);
 }
 
+#topBarLogin{
+    color: black;
+
+    cursor: pointer;
+    margin-left: 2vh;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 10%;
+}
+#topBarLogin h3{
+    margin-right: 2vh;
+    transform: rotate(90deg);
+}
+
+#topBarLogin img{
+    border-radius: 50px;
+    padding: 4%;
+    height: 2vw;
+    width: 2vw;
+}
+
+#sideBar{
+    color: white;
+    background-color: #2c2c2c;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    padding-bottom: 3vh;
+}
+
+#sideBarLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 10vh;
+    width: 15vw;
+    font-size: 2rem;
+}
+
+#profile{
+    width: 100%;
+    cursor: pointer;
+}
+
+#profile:hover p{
+    color: var(--skinRed);
+}
+
+#profileImg{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#profileImg img{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+}
+
+#profileImg p{
+    margin-left: 1vh;
+}
+
+.course{
+    margin-left: 5%;
+    margin-top: 3vh;
+}
+
+.courseVis:hover p{
+    color: var(--skinRed);
+    display: inline;
+}
+
+.courseText{
+    color: white;
+    display: inline;
+}
+
+.courseVis{
+    cursor: pointer;
+}
+
+.course:hover .courseDropDown {
+    cursor: pointer;
+    visibility: visible;
+    position: relative;
+}
+
+.downArrow{
+    color: white;
+    margin-left: 1vh;
+    transform: rotate(90deg); 
+    display: inline-block;
+}
+
+.courseDropDown{
+    visibility: hidden;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.courseDropDownText{
+    padding-top: 1vh;
+    padding-left: 3vh;
+}
+
+.courseDropDownText:hover{
+    color: var(--skinRed);
+    cursor: pointer;
+}
+
+
 #quickLinks{
     margin-top: 2%;
     font-size: 0.85rem;
@@ -137,8 +251,8 @@ body {
     justify-content: flex-start;
     align-content: flex-start;
     width: 60%;
-    margin-left: 20%;
-    color: white;
+    margin-left: 28%;
+    color: black;
 }
 
 #quickLinks h3{
@@ -158,7 +272,7 @@ body {
     background-color: white;
     margin-top: 20px;
     width: 50%;
-    margin-left: 19%;
+    margin-left: 28%;
     margin-right: 19%;
     margin-bottom: 20px;
 }
