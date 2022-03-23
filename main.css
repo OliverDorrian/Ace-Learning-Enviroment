@@ -37,7 +37,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 2vh;
+    width: 1vw;
 }
 
 /* Track */
@@ -113,7 +113,6 @@ body {
 
 #topBarLogin{
     color: black;
-
     cursor: pointer;
     margin-left: 2vh;
     height: 100%;
@@ -165,31 +164,73 @@ body {
 }
 
 #profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     cursor: pointer;
 }
 
-#profile:hover p{
+#profileVis:hover p{
     color: var(--skinRed);
 }
 
-#profileImg{
-    width: 100%;
-    height: 50%;
-    display: flex;
+#profileImg {
+    width: 8vh;
+    height: 4vw;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #profileImg img{
-    width: 7vh;
-    height: 7vh;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
 #profileImg p{
-    margin-left: 1vh;
+    margin-left: 2vw;
+}
+
+#profileVis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#profileInvis {
+    margin-left: 70%;
+    width: 100%;
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    visibility: hidden;
+    position: absolute;
+}
+
+
+#acountLink:hover {
+    color: var(--skinRed);
+}
+
+#logOut:hover {
+    color: var(--skinRed);
+
+}
+
+#profileInvis p{
+    padding: 1vh;
+}
+
+#profile:hover #profileInvis{
+    visibility: visible;
+    position: relative;
 }
 
 .course{
@@ -310,13 +351,13 @@ body {
 }
 
 .articleImg{
-    height: 70vh;
     width: 100%;
+    height: auto;
 }
 
 .articleImg img{
-    height: 100%;
     width: 100%;
+    height: auto;
 }
 
 .BiggestText{
@@ -457,6 +498,10 @@ body {
     width: 33%;
 }
 
+#progressCircle{
+    width: 7vh;
+    height: 7vh;
+}
 .progressBar{
     margin-top: auto;
     height: 10vh;
@@ -469,12 +514,14 @@ body {
 
 .circle {
     position: relative;
-    width: 7vh;
-    height: 7vh;
-    margin: 0.5rem;
+    width: 100%;
+    height: 100%;
+ 
     border-radius: 50%;
     overflow: hidden;
-    background-image: conic-gradient(var(--niceGreen)78%, white 0);
+    background-image: conic-gradient(rgb(37, 161, 37) 78%, white 0);
+    margin-left: 1vh;
+    margin-bottom: 1vh;
 }
 
 .circle .inner {
@@ -487,8 +534,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 5vh;
-    height: 5vh;
+    width: 70%;
+    height: 70%;
     background: #2c2c2c;
     border-radius: 50%;
     color: rgba(255, 255, 255, 0.75);
