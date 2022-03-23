@@ -172,6 +172,10 @@ body {
     cursor: pointer;
 }
 
+#name{
+    margin-left: 2vh;
+}
+
 #profileVis:hover p{
     color: var(--skinRed);
 }
