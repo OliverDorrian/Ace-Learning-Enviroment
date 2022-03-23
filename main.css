@@ -69,19 +69,19 @@ body {
 }
 
 #topBar{
+    margin-left: 29%;
     top: 0;
-    color: var(--skinRed);
+    color: black;
     position: sticky;
     display: flex;
     flex-direction: row;
     height: 10vh;
-    width: 100%;
+    width: 71%;
 }
 
 
 #topBarRight{
-    width: 60%;
-    margin-left: 55%;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -103,7 +103,7 @@ body {
 }
 
 .topBarLinksText:hover{
-    color: var(--aliWhite);
+    color: var(--skinRed);
     cursor: pointer;
 }
 
@@ -146,6 +146,11 @@ body {
     padding-right: 1vh;
     padding-left: 1vh;
     padding-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
 }
 
 #sideBarLogo{
@@ -256,7 +261,7 @@ body {
 }
 
 #quickLinks h3{
-    margin-left: 30px;
+    margin-left: 1vw;
 }
 
 #quickLinks h3:hover{
@@ -450,4 +455,45 @@ body {
     display: inline;
     height: 100%;
     width: 33%;
+}
+
+.progressBar{
+    margin-top: auto;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+    margin: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: conic-gradient(var(--niceGreen)78%, white 0);
+}
+
+.circle .inner {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 5vh;
+    height: 5vh;
+    background: #2c2c2c;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.inner p{
+    padding: 1vh;
 }
